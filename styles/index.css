@@ -1,6 +1,14 @@
+img {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
 h1{
-    font-family: cursive;
-    position: central;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    justify-content:center;
+    align-items: center;
 }
 
 header{
