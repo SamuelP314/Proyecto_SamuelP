@@ -1,5 +1,6 @@
 .botonVuelta {
     max-width: 10vw;
+    border-radius: 25%;
 }
 iframe {
     min-width: 80vw;

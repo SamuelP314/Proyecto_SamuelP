@@ -37,11 +37,12 @@ main{
 }
 
 button{
+    border-radius: 15%;
     width: 20vw;
     min-width: 75pt;
     height:25vh;
     min-height: 30pt;
-    background-color: rgb(86, 86, 255);
+    background-color: rgb(136, 136, 255);
 }
 
 button:hover{
@@ -57,6 +58,7 @@ h2{
 h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20pt;
+    color: rgb(0, 0, 0);
 }
 
 footer{
@@ -82,8 +84,21 @@ section{
     height: 25vh;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 850px) {
     section{
         flex-direction: column;
     }
-}
+
+    button{
+        width: 50vw;
+        max-width: 250pt;
+        min-width: 75pt;
+        height:20vh;
+        min-height: 30pt;
+    }
+    main{
+        min-height: 140vh;
+    }
+    section{
+        min-height: 100vh;
+    }
