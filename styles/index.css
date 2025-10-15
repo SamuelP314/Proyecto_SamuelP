@@ -9,7 +9,7 @@ img {
     min-height: 100vh;
 }
 
-h1{
+h1 {
     font-family: 'Verdana', sans-serif;
     font-size: 50pt;
     color: rgb(255, 255, 255);
@@ -17,11 +17,9 @@ h1{
 
 header {
     background-image:
-        linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ),
+        linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
         url("../media/CircuiosBien.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,7 +30,7 @@ header {
     align-items: center;
 }
 
-main{
+main {
     background-color: rgb(0, 0, 35);
     height: 70vh;
     min-height: 30pt;
@@ -42,42 +40,42 @@ main{
     align-items: center;
 }
 
-button{
+button {
     width: 20vw;
     min-width: 75pt;
-    height:25vh;
+    height: 25vh;
     min-height: 30pt;
     background-color: rgb(86, 86, 255);
 }
 
-button:hover{
+button:hover {
     background-color: rgb(200, 200, 200);
     transform: scale(1.05);
 }
 
-h2{
+h2 {
     color: rgb(255, 255, 255);
     font-family: 'Verdana', sans-serif;
     font-size: 25pt;
 }
 
-h3{
+h3 {
     font-family: 'Verdana', sans-serif;
     font-size: 20pt;
     color: rgb(0, 0, 0);
 }
 
-h4{
+h4 {
     max-width: 80vw;
     font-family: 'Verdana', sans-serif;
     font-size: 2vh;
     color: rgb(255, 255, 255);
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 20pt;
     border-radius: 15pt;
 }
 
-footer{
+footer {
     background-color: rgb(0, 0, 35);
     height: 10vh;
     display: flex;
@@ -87,13 +85,14 @@ footer{
 }
 
 
-div{
+div {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
-section{
+
+section {
     background-color: rgb(0, 0, 35);
     display: flex;
     flex-direction: row;
@@ -102,21 +101,23 @@ section{
 }
 
 @media (max-width: 850px) {
-    section{
+    section {
         flex-direction: column;
     }
 
-    button{
+    button {
         width: 50vw;
         max-width: 250pt;
         min-width: 75pt;
-        height:20vh;
+        height: 20vh;
         min-height: 30pt;
     }
-    main{
+
+    main {
         min-height: 140vh;
     }
-    section{
+
+    section {
         min-height: 100vh;
     }
 }
