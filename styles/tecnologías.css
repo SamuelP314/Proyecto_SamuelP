@@ -55,4 +55,10 @@ iframe {
     width: 80vw;
     height: 80vh;
     border-radius: 15pt;
+    margin: 5vh;
 }
+
+footer{
+    padding-bottom: 5vh;
+}
+

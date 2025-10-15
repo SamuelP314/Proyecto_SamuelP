@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 img {
     min-width: 100vw;
     min-height: 100vh;
@@ -77,6 +83,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5vh;
 }
 
 
@@ -112,3 +119,4 @@ section{
     section{
         min-height: 100vh;
     }
+}
