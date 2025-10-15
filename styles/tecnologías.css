@@ -1,8 +1,58 @@
-.botonVuelta {
-    max-width: 10vw;
-    border-radius: 25%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: rgb(0, 0, 35);
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    gap: 5vh;
+}
+
+h1 {
+    font-size: 50pt;
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana', sans-serif;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana', sans-serif;
+}
+
+.botonVuelta {
+    width: 50pt;
+    height: 50pt;  
+    border-radius: 25%;
+    position: fixed;
+    top: 3vh;
+    left: 1vw;
+    z-index: 1000;
+    transition: transform 0.2s;
+}
+
+.botonVuelta:hover {
+    transform: scale(1.2);
+}
+
+div {
+    width: 100%;
+    justify-content: start;
+}
+
+h3 {
+    line-height: 1.5;
+    max-width: 80vw;
+    background-color: rgba(255,255,255,0.05);
+    padding: 20pt;
+    border-radius: 15pt;
+}
+
 iframe {
-    min-width: 80vw;
-    min-height: 50vw;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 15pt;
 }
