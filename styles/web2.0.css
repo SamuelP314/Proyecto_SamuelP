@@ -21,6 +21,28 @@ h1 {
 h3 {
     color: rgb(255, 255, 255);
     font-family: 'Verdana', sans-serif;
+    line-height: 1.5;
+    max-width: 80vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15pt;
+    text-align: justify;
+    font-size: 3vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.5;
+    max-width: 80vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15pt;
+    text-align: justify;
+    font-size: 3vh;
+    padding: 4vh;
 }
 
 .botonVuelta {
@@ -41,14 +63,7 @@ h3 {
 div {
     width: 100%;
     justify-content: start;
-}
-
-h3 {
-    line-height: 1.5;
-    max-width: 80vw;
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 20pt;
-    border-radius: 15pt;
+    gap: 5vh;
 }
 
 iframe {

@@ -9,18 +9,20 @@ img {
     min-height: 100vh;
 }
 
-h1 {
-    font-family: 'Verdana', sans-serif;
-    font-size: 50pt;
-    color: rgb(255, 255, 255);
-}
+body {
 
-header {
     background-image:
         linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url("../media/CircuiosBien.png");
+        url("../media/FondoPro.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,7 +33,6 @@ header {
 }
 
 main {
-    background-color: rgb(0, 0, 35);
     height: 70vh;
     min-height: 30pt;
     display: flex;
@@ -43,26 +44,34 @@ main {
 button {
     width: 20vw;
     min-width: 75pt;
-    height: 25vh;
-    min-height: 30pt;
-    background-color: rgb(86, 86, 255);
+    height: 15vh;
+    min-height: 5vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15pt;
+    border: none;
 }
 
 button:hover {
-    background-color: rgb(200, 200, 200);
-    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+h1 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 10vh;
+    color: rgb(255, 255, 255);
 }
 
 h2 {
     color: rgb(255, 255, 255);
     font-family: 'Verdana', sans-serif;
-    font-size: 25pt;
+    font-size: 5vh;
 }
 
 h3 {
     font-family: 'Verdana', sans-serif;
-    font-size: 20pt;
-    color: rgb(0, 0, 0);
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
 }
 
 h4 {
@@ -76,7 +85,6 @@ h4 {
 }
 
 footer {
-    background-color: rgb(0, 0, 35);
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -93,11 +101,10 @@ div {
 }
 
 section {
-    background-color: rgb(0, 0, 35);
     display: flex;
     flex-direction: row;
     gap: 5vh;
-    height: 25vh;
+    height: 15vh;
 }
 
 @media (max-width: 850px) {

@@ -13,19 +13,31 @@ body {
 }
 
 h1 {
-    font-size: 50pt;
+    font-size: 10vh;
     color: rgb(255, 255, 255);
     font-family: 'Verdana', sans-serif;
+    text-align: justify;
 }
 
-h3{
+h3 {
     color: rgb(255, 255, 255);
     font-family: 'Verdana', sans-serif;
+    text-align: justify;
+    font-size: 3vh;
+    line-height: 1.5;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 5vh;
 }
 
 .botonVuelta {
     width: 50pt;
-    height: 50pt;  
+    height: 50pt;
     border-radius: 25%;
     position: fixed;
     top: 3vh;
@@ -38,17 +50,54 @@ h3{
     transform: scale(1.2);
 }
 
-div {
-    width: 100%;
-    justify-content: start;
-}
-
-h3 {
-    line-height: 1.5;
-    max-width: 80vw;
-    background-color: rgba(255,255,255,0.05);
+.divConFoto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 20pt;
     border-radius: 15pt;
+    gap: 5vh;
+}
+
+.divSinFoto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20pt;
+    border-radius: 15pt;
+    gap: 0;
+}
+
+.divPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border-radius: 15pt;
+    gap: 5vh;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20pt;
+    border-radius: 15pt;
+    min-width: 8vw;
+    min-height: 8vh;
+}
+
+img {
+    height: 9vh;
+    width: auto;
+    
 }
 
 iframe {
@@ -56,9 +105,21 @@ iframe {
     height: 80vh;
     border-radius: 15pt;
     margin: 5vh;
+
 }
 
-footer{
+footer {
     padding-bottom: 5vh;
 }
 
+@media (max-width: 850px) {
+    div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+    }
+}
