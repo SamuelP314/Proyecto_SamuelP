@@ -44,14 +44,14 @@ h3 {
     transform: scale(1.2);
 }
 
-div {
-    width: 100%;
-    justify-content: start;
-}
-
-iframe {
+.DivTest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 80vw;
-    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20pt;
     border-radius: 15pt;
-    margin: 5vh;
+    gap: 5vh;
+    color: rgb(255, 255, 255);
 }
