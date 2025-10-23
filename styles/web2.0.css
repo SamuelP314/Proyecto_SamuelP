@@ -46,12 +46,12 @@ h4 {
 }
 
 .botonVuelta {
-    width: 50pt;
-    height: 50pt;
+    width: 9vh;
+    height: 9vht;
     border-radius: 25%;
     position: fixed;
     top: 3vh;
-    left: 1vw;
+    left: 3vh;
     z-index: 1000;
     transition: transform 0.2s;
 }

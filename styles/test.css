@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: rgb(0, 0, 35);
     display: grid;
@@ -13,29 +7,46 @@ body {
 }
 
 h1 {
-    font-size: 50pt;
+    font-size: 10vh;
     color: rgb(255, 255, 255);
     font-family: 'Verdana', sans-serif;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 h3 {
     color: rgb(255, 255, 255);
     font-family: 'Verdana', sans-serif;
     line-height: 1.5;
     max-width: 80vw;
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 20pt;
+    border-radius: 15pt;
+    font-size: 3.33vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.5;
+    max-width: 80vw;
     border-radius: 15pt;
     font-size: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .botonVuelta {
-    width: 50pt;
-    height: 50pt;
+    width: 9vh;
+    height: 9vh;
     border-radius: 25%;
     position: fixed;
     top: 3vh;
-    left: 1vw;
+    left: 3vh;
     z-index: 1000;
     transition: transform 0.2s;
 }
@@ -46,7 +57,7 @@ h3 {
 
 .DivTest {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     width: 80vw;
     background-color: rgba(255, 255, 255, 0.1);
@@ -54,4 +65,47 @@ h3 {
     border-radius: 15pt;
     gap: 5vh;
     color: rgb(255, 255, 255);
+}
+
+.DivPregunta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15pt;
+    color: rgb(255, 255, 255);
+    padding: 3vh;
+    margin: 5vh;
+}
+
+#DivFinal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15pt;
+    color: rgb(255, 255, 255);
+    padding: 3vh;
+    margin: 5vh;
+}
+
+#nota {
+    width: 55vw;
+    height: 2vh;
+    align-self: center;
+}
+
+label {
+    font-family: 'Verdana', sans-serif;
+    font-size: 3vh;
+    line-height: 1.5;
+}
+
+* {
+    font-family: 'Verdana', sans-serif;
+    font-size: 3vh;
+    line-height: 1.5;
 }
