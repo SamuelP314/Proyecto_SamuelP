@@ -55,7 +55,7 @@ h4 {
     transform: scale(1.2);
 }
 
-.DivTest {
+#DivTest {
     display: flex;
     flex-direction: column;
     align-items: center;

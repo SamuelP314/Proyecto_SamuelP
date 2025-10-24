@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/test.css">
     <link rel="shortcut icon" href="../media/SPLogo.png" type="image/x-icon">
+    <script src="../scripts/test.js"></script>
     <title>Test</title>
 </head>
 
@@ -23,26 +24,26 @@
         Tu navegador no soporta el elemento de audio.
     </audio>
 
-    <div class="DivTest">
-        <form action="/action_page.php">
+    <div id="DivTest">
+        <form onsubmit="comprobar()" onreset="limpiar()">
 
     <b>
         
     <div class="DivPregunta">
         <h3>Nombre</h3>
-        <h4><input type="text" id="nombre" name="nombre" placeholder=" Nombre" required></h4>
+        <h4><input type="text" name="P1" placeholder=" Nombre" required></h4>
     </div>
 
     <div class="DivPregunta">
         <h3>Apellidos</h3>
-        <h4><input type="text" id="apellido" name="apellido" placeholder=" Apellidos" required></h4>
+        <h4><input type="text" name="P2" placeholder=" Apellidos" required></h4>
     </div>
 
     <hr>
 
     <div class="DivPregunta">
         <h3>¿En qué contexto histórico nació Internet?</h3>
-        <h4><select id="origen" name="origen" required>
+        <h4><select name="P3">
             <option value="">--Selecciona una opción--</option>
             <option value="guerraFria">Durante la Guerra Fría</option>
             <option value="revolucionIndustrial">En la Revolución Industrial</option>
@@ -53,15 +54,18 @@
     <div class="DivPregunta">
         <h3>¿Qué red fue la precursora de Internet?</h3>
         <h4>
-            <input type="radio" name="red" value="ARPANET" required> ARPANET<br>
-            <input type="radio" name="red" value="WWW"> World Wide Web<br>
-            <input type="radio" name="red" value="LAN"> LAN
+            <input type="radio" name="P4" value="ARPANET"> ARPANET<br>
+            <input type="radio" name="P4" value="WWW"> World Wide Web<br>
+            <input type="radio" name="P4" value="LAN"> LAN
         </h4>
+        <div class="DivImgPreg">
+            <img id="imgP4" src="" alt="">
+        </div>
     </div>
 
     <div class="DivPregunta">
         <h3>¿Quién inventó la World Wide Web?</h3>
-        <h4><select id="inventor" name="inventor" required>
+        <h4><select name="P5">
             <option value="">--Selecciona una opción--</option>
             <option value="tim">Tim Berners-Lee</option>
             <option value="bill">Bill Gates</option>
@@ -72,15 +76,15 @@
     <div class="DivPregunta">
         <h3>¿Qué década vio el nacimiento de la Web 2.0?</h3>
         <h4>
-            <input type="radio" name="web2" value="90" required> Años 90<br>
-            <input type="radio" name="web2" value="2000"> Años 2000<br>
-            <input type="radio" name="web2" value="2010"> Años 2010
+            <input type="radio" name="P6" value="90"> Años 90<br>
+            <input type="radio" name="P6" value="2000"> Años 2000<br>
+            <input type="radio" name="P6" value="2010"> Años 2010
         </h4>
     </div>
 
     <div class="DivPregunta">
         <h3>¿Cuál de estas NO es una característica de la Web 2.0?</h3>
-        <h4><select id="caracteristicas" name="caracteristicas" required>
+        <h4><select name="P7">
             <option value="">--Selecciona una opción--</option>
             <option value="interactividad">Interactividad</option>
             <option value="colaboracion">Colaboración</option>
@@ -91,15 +95,15 @@
     <div class="DivPregunta">
         <h3>¿Cuál de estas tecnologías se usa para dar estilo a una página web?</h3>
         <h4>
-            <input type="radio" name="tecnologia" value="HTML" required> HTML<br>
-            <input type="radio" name="tecnologia" value="CSS"> CSS<br>
-            <input type="radio" name="tecnologia" value="JavaScript"> JavaScript
+            <input type="radio" name="P8" value="HTML"> HTML<br>
+            <input type="radio" name="P8" value="CSS"> CSS<br>
+            <input type="radio" name="P8" value="JavaScript"> JavaScript
         </h4>
     </div>
 
     <div class="DivPregunta">
         <h3>¿Cuál de las siguientes opciones es una base de datos?</h3>
-        <h4><select id="baseDatos" name="baseDatos" required>
+        <h4><select name="P9">
             <option value="">--Selecciona una opción--</option>
             <option value="MySQL">MySQL</option>
             <option value="React">React</option>
@@ -109,7 +113,7 @@
 
     <div class="DivPregunta">
         <h3>¿Qué función cumple JavaScript en una web?</h3>
-        <h4><select id="js" name="js" required>
+        <h4><select name="P10">
             <option value="">--Selecciona una opción--</option>
             <option value="estructura">Define la estructura básica</option>
             <option value="estilo">Da color y formato</option>
@@ -120,9 +124,9 @@
     <div class="DivPregunta">
         <h3>¿Qué generación de la web busca interpretar el significado de la información mediante IA?</h3>
         <h4>
-            <input type="radio" name="web3" value="Web1.0" required> Web 1.0<br>
-            <input type="radio" name="web3" value="Web2.0"> Web 2.0<br>
-            <input type="radio" name="web3" value="Web3.0"> Web 3.0
+            <input type="radio" name="P11" value="Web1.0"> Web 1.0<br>
+            <input type="radio" name="P11" value="Web2.0"> Web 2.0<br>
+            <input type="radio" name="P11" value="Web3.0"> Web 3.0
         </h4>
     </div>
 
@@ -130,7 +134,7 @@
 
     <div class="DivPregunta">
         <h3>Del 0 al 10, ¿qué nota pondrías a esta página web?</h3>
-        <h4>0 <input type="range" id="nota" name="nota" min="0" max="10"> 10</h4>
+        <h4>0 <input type="range" id="nota" name="P13" min="0" max="10"> 10</h4>
     </div>
 
     <hr>
