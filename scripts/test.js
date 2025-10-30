@@ -13,9 +13,9 @@ function comprobar(){
 }
 
 if (respuestaOK){
-    document.getElementById("imgP4").src="media/BienImg.png"
+    document.getElementById("imgP4").src="../media/BienImg.png"
 }else{
-    document.getElementById("imgP4").src="media/MalImg.png"
+    document.getElementById("imgP4").src="../media/MalImg.png"
 }
 document.getElementById("imgP4").style.visibility="visible"
 
