@@ -95,7 +95,7 @@ function comprobar(){
     event.preventDefault()
     RespuestasP3 = document.getElementById("P3")
     respuesta3OK=false
-    if (select.value == "Durante la Guerra Fría"){
+    if (RespuestasP3.value == "GuerraFria"){
         respuesta3OK = true
     }
 
@@ -105,6 +105,45 @@ function comprobar(){
         document.getElementById("imgP3").src="../media/MalImg.jpg"
     }
     document.getElementById("imgP3").style.visibility="visible"
-    }  
 
-}
+
+
+
+
+    event.preventDefault()
+    RespuestasP5 = document.getElementById("P5")
+    respuesta5OK=false
+    if (RespuestasP5.value == "Tim"){
+        respuesta5OK = true
+    }
+
+    if (respuesta5OK){
+        document.getElementById("imgP5").src="../media/BienImg.jpg"
+    }else{
+        document.getElementById("imgP5").src="../media/MalImg.jpg"
+    }
+    document.getElementById("imgP5").style.visibility="visible"
+
+
+
+
+
+    event.preventDefault()
+    RespuestasP10 = document.getElementById("P10")
+    respuesta10OK=false
+    if (RespuestasP10.value == "Interactividad"){
+        respuesta10OK = true
+    }
+
+    if (respuesta10OK){
+        document.getElementById("imgP10").src="../media/BienImg.jpg"
+    }else{
+        document.getElementById("imgP10").src="../media/MalImg.jpg"
+    }
+    document.getElementById("imgP10").style.visibility="visible"
+
+
+
+
+
+}  
