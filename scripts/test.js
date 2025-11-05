@@ -15,21 +15,12 @@ function comprobar(){
         }
     }
 
-<<<<<<< HEAD
     if (respuesta4OK){
         document.getElementById("imgP4").src="../media/BienImg.jpg"
     }else{
         document.getElementById("imgP4").src="../media/MalImg.jpg"
     }
     document.getElementById("imgP4").style.visibility="visible"
-=======
-if (respuestaOK){
-    document.getElementById("imgP4").src="../media/BienImg.png"
-}else{
-    document.getElementById("imgP4").src="../media/MalImg.png"
-}
-document.getElementById("imgP4").style.visibility="visible"
->>>>>>> 91f4f7fcc6fc147bb82b219d228109cde053021c
 
 
 
@@ -95,4 +86,25 @@ document.getElementById("imgP4").style.visibility="visible"
         document.getElementById("imgP11").src="../media/MalImg.jpg"
     }
     document.getElementById("imgP11").style.visibility="visible"
-}  
+  
+
+
+
+
+
+    event.preventDefault()
+    RespuestasP3 = document.getElementById("P3")
+    respuesta3OK=false
+    if (select.value == "Durante la Guerra Fría"){
+        respuesta3OK = true
+    }
+
+    if (respuesta3OK){
+        document.getElementById("imgP3").src="../media/BienImg.jpg"
+    }else{
+        document.getElementById("imgP3").src="../media/MalImg.jpg"
+    }
+    document.getElementById("imgP3").style.visibility="visible"
+    }  
+
+}
