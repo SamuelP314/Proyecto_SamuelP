@@ -49,6 +49,7 @@ button {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 15pt;
     border: none;
+    transition: transform 0.2s;
 }
 
 button:hover {
@@ -130,6 +131,7 @@ section {
         min-width: 75pt;
         height: 20vh;
         min-height: 30pt;
+        transition: transform 0.2s;
     }
 
     main {

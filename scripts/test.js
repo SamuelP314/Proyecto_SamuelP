@@ -15,12 +15,21 @@ function comprobar(){
         }
     }
 
+<<<<<<< HEAD
     if (respuesta4OK){
         document.getElementById("imgP4").src="../media/BienImg.jpg"
     }else{
         document.getElementById("imgP4").src="../media/MalImg.jpg"
     }
     document.getElementById("imgP4").style.visibility="visible"
+=======
+if (respuestaOK){
+    document.getElementById("imgP4").src="../media/BienImg.png"
+}else{
+    document.getElementById("imgP4").src="../media/MalImg.png"
+}
+document.getElementById("imgP4").style.visibility="visible"
+>>>>>>> 91f4f7fcc6fc147bb82b219d228109cde053021c
 
 
 
