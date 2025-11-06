@@ -1,16 +1,19 @@
 function comprobar(){
-
-
-
-
-
     event.preventDefault()
+    RespuestaFinal=true
+
+
+
+
     rdRespuestasP4 = document.getElementsByName("P4")
     respuesta4OK=false
     for (radio of rdRespuestasP4){
         if (radio.checked){
             if (radio.value == "ARPANET"){
                 respuesta4OK = true
+            }
+            else{
+                RespuestaFinal=false
             }
         }
     }
@@ -34,6 +37,9 @@ function comprobar(){
             if (radio.value == "2000"){
                 respuesta6OK = true
             }
+            else{
+                RespuestaFinal=false
+            }
         }
     }
 
@@ -56,6 +62,9 @@ function comprobar(){
             if (radio.value == "CSS"){
                 respuesta8OK = true
             }
+            else{
+                RespuestaFinal=false
+            }
         }
     }
 
@@ -76,6 +85,9 @@ function comprobar(){
         if (radio.checked){
             if (radio.value == "Web3.0"){
                 respuesta11OK = true
+            }
+            else{
+                RespuestaFinal=false
             }
         }
     }
@@ -98,6 +110,9 @@ function comprobar(){
     if (RespuestasP3.value == "GuerraFria"){
         respuesta3OK = true
     }
+    else{
+        RespuestaFinal=false
+    }
 
     if (respuesta3OK){
         document.getElementById("imgP3").src="../media/BienImg.jpg"
@@ -115,6 +130,9 @@ function comprobar(){
     respuesta5OK=false
     if (RespuestasP5.value == "Tim"){
         respuesta5OK = true
+    }
+    else{
+        RespuestaFinal=false
     }
 
     if (respuesta5OK){
@@ -134,6 +152,9 @@ function comprobar(){
     if (RespuestasP10.value == "Interactividad"){
         respuesta10OK = true
     }
+    else{
+        RespuestaFinal=false
+    }
 
     if (respuesta10OK){
         document.getElementById("imgP10").src="../media/BienImg.jpg"
@@ -145,5 +166,26 @@ function comprobar(){
 
 
 
+    /*event.preventDefault()
+    RespuestasP9 = document.getElementById("P9")
+    respuesta10OK=false
+    if (RespuestasP9.value == "Interactividad"){
+        respuesta9OK = true
+    }
+
+    if (respuesta9OK){
+        document.getElementById("imgP9").src="../media/BienImg.jpg"
+    }else{
+        document.getElementById("imgP9").src="../media/MalImg.jpg"
+    }
+    document.getElementById("imgP9").style.visibility="visible" */
+
+
+if (RespuestaFinal==true){
+    DivPremio= document.getElementById("DivPremio")
+    const imgPremio = document.createElement("img")
+    imgPremio.src="../media/Premio.png"
+    DivPremio.appendChild(imgPremio)
+}
 
 }  

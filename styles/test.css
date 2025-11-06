@@ -109,3 +109,20 @@ label {
     font-size: 3vh;
     line-height: 1.5;
 }
+
+#DivPremio: {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    border-radius: 15pt;
+    color: rgb(255, 255, 255);
+}
+
+#DivPremio:not(:empty) {
+    background-color: rgba(255, 0, 0, 1);
+    padding: 3vh;
+    margin: 5vh;
+  }
+  
