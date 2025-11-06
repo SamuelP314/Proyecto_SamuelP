@@ -25,7 +25,7 @@
     </audio>
 
     <div id="DivTest">
-        <form onsubmit="comprobar()" onreset="limpiar()">
+        <form onsubmit="comprobar(event)" onreset="limpiar()">
 
     <b>
         
@@ -50,7 +50,7 @@
             <option value="Años2000">En los años 2000</option>
         </select></h4>
         <div class="DivImgPreg">
-            <img id="imgP3" src="" alt="">
+            <img class="imgPreg" id="imgP3" src="" alt="">
         </div>
     </div>
 
@@ -62,7 +62,7 @@
             <input type="radio" name="P4" value="LAN"> LAN
         </h4>
         <div class="DivImgPreg">
-            <img id="imgP4" src="" alt="">
+            <img class="imgPreg" id="imgP4" src="" alt="">
         </div>
     </div>
 
@@ -73,10 +73,10 @@
             <option value="Vin">Vinton Cerf</option>
             <option value="BobK">Robert Kahn</option>
             <option value="Tim">Tim Berners-Lee</option>
-            <option value="JohnWWW">John World Web Jr</option>
+            <option value="JohnWWW">John World Wide Web Jr</option>
         </select></h4>
         <div class="DivImgPreg">
-            <img id="imgP5" src="" alt="">
+            <img class="imgPreg" id="imgP5" src="" alt="">
         </div>
     </div>
 
@@ -88,7 +88,7 @@
             <input type="radio" name="P6" value="2010"> Años 2010
         </h4>
         <div class="DivImgPreg">
-            <img id="imgP6" src="" alt="">
+            <img class="imgPreg" id="imgP6" src="" alt="">
         </div>
     </div>
 
@@ -102,7 +102,7 @@
             <input type="checkbox" name="P7" value="R5">  <label for="html">Dinamismo</label>
         </h4>
         <div class="DivImgPreg">
-            <img id="imgP7" src="" alt="">
+            <img class="imgPreg" id="imgP7" src="" alt="">
         </div>
     </div>
 
@@ -114,7 +114,7 @@
             <input type="radio" name="P8" value="JavaScript"> JavaScript
         </h4>
         <div class="DivImgPreg">
-            <img id="imgP8" src="" alt="">
+            <img class="imgPreg" id="imgP8" src="" alt="">
         </div>
     </div>
 
@@ -124,7 +124,7 @@
             <input type="date" id="P9" name="P9">
         </h4>
         <div class="DivImgPreg">
-            <img id="imgP9" src="" alt="">
+            <img class="imgPreg" id="imgP9" src="" alt="">
         </div>
     </div>
 
@@ -136,9 +136,10 @@
             <option value="Estructura">Define la estructura básica</option>
             <option value="Estilo">Da color y formato</option>
             <option value="Interactividad">Aporta interactividad y dinamismo</option>
+            <option value="AAAAA">Tocar las narices porque nunca funciona.</option>
         </select></h4>
         <div class="DivImgPreg">
-            <img id="imgP10" src="" alt="">
+            <img class="imgPreg" id="imgP10" src="" alt="">
         </div>
     </div>
 
@@ -150,7 +151,7 @@
             <input type="radio" name="P11" value="Web3.0"> Web 3.0
         </h4>
         <div class="DivImgPreg">
-            <img id="imgP11" src="" alt="">
+            <img class="imgPreg" id="imgP11" src="" alt="">
         </div>
     </div>
 
@@ -172,10 +173,8 @@
         </h4>
 
     </div>
-        <div id="DivPremio">
-
-        </div>
-</b>
+        <div id="DivPremio"></div>
+    </b>
         </form>
     </div>
 

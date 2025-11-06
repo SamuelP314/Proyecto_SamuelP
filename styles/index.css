@@ -1,137 +1,133 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
-    min-width: 100vw;
-    min-height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 body {
-
-    background-image:
-        linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
-        url("../media/FondoPro.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../media/FondoPro.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    height: 70vh;
-    min-height: 30pt;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 70vh;
+  min-height: 30pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 button {
-    width: 20vw;
-    min-width: 75pt;
-    height: 15vh;
-    min-height: 5vh;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 15pt;
-    border: none;
-    transition: transform 0.2s;
+  width: 20vw;
+  min-width: 75pt;
+  height: 15vh;
+  min-height: 5vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15pt;
+  border: none;
+  transition: transform 0.2s;
 }
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
 }
 
 h1 {
-    font-family: 'Verdana', sans-serif;
-    font-size: 15vh;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 5px rgb(0, 0, 255), 0 0 10px rgb(0, 255, 255);
-    margin-top: 5vh;
-    justify-content: center;
+  font-family: "Verdana", sans-serif;
+  font-size: 15vh;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgb(0, 0, 255), 0 0 10px rgb(0, 255, 255);
+  margin-top: 5vh;
+  justify-content: center;
 }
 
-
-
 h2 {
-    color: rgb(255, 255, 255);
-    font-family: 'Verdana', sans-serif;
-    font-size: 5vh;
+  color: rgb(255, 255, 255);
+  font-family: "Verdana", sans-serif;
+  font-size: 5vh;
 }
 
 h3 {
-    font-family: 'Verdana', sans-serif;
-    font-size: 4vh;
-    color: rgb(255, 255, 255);
+  font-family: "Verdana", sans-serif;
+  font-size: 4vh;
+  color: rgb(255, 255, 255);
 }
 
 h4 {
-    max-width: 80vw;
-    font-family: 'Verdana', sans-serif;
-    font-size: 3vh;
-    color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 20pt;
-    border-radius: 15pt;
+  max-width: 80vw;
+  font-family: "Verdana", sans-serif;
+  font-size: 3vh;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20pt;
+  border-radius: 15pt;
 }
 
 footer {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5vh;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
 }
 
-
 div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
-    display: flex;
-    flex-direction: row;
-    gap: 5vh;
-    height: 15vh;
+  display: flex;
+  flex-direction: row;
+  gap: 5vh;
+  height: 15vh;
 }
 
 @media (max-width: 850px) {
-    section {
-        flex-direction: column;
-    }
+  section {
+    flex-direction: column;
+  }
 
-    button {
-        width: 50vw;
-        max-width: 250pt;
-        min-width: 75pt;
-        height: 20vh;
-        min-height: 30pt;
-        transition: transform 0.2s;
-    }
+  button {
+    width: 50vw;
+    max-width: 250pt;
+    min-width: 75pt;
+    height: 20vh;
+    min-height: 30pt;
+    transition: transform 0.2s;
+  }
 
-    main {
-        min-height: 140vh;
-    }
+  main {
+    min-height: 140vh;
+  }
 
-    section {
-        min-height: 100vh;
-    }
+  section {
+    min-height: 100vh;
+  }
 }
