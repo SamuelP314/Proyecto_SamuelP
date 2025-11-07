@@ -10,7 +10,7 @@ function comprobar(event) {
     RespuestaFinal = false;
   }
 
-  if (respuesta3OK) {
+  if (respuesta3OK == true) {
     document.getElementById("imgP3").src = "../media/BienImg.png";
   } else {
     document.getElementById("imgP3").src = "../media/MalImg.png";
@@ -29,7 +29,7 @@ function comprobar(event) {
     }
   }
 
-  if (respuesta4OK) {
+  if (respuesta4OK == true) {
     document.getElementById("imgP4").src = "../media/BienImg.png";
   } else {
     document.getElementById("imgP4").src = "../media/MalImg.png";
@@ -44,7 +44,7 @@ function comprobar(event) {
     RespuestaFinal = false;
   }
 
-  if (respuesta5OK) {
+  if (respuesta5OK == true) {
     document.getElementById("imgP5").src = "../media/BienImg.png";
   } else {
     document.getElementById("imgP5").src = "../media/MalImg.png";
@@ -63,7 +63,7 @@ function comprobar(event) {
     }
   }
 
-  if (respuesta6OK) {
+  if (respuesta6OK == true) {
     document.getElementById("imgP6").src = "../media/BienImg.png";
   } else {
     document.getElementById("imgP6").src = "../media/MalImg.png";
@@ -71,33 +71,21 @@ function comprobar(event) {
   document.getElementById("imgP6").style.visibility = "visible";
 
   RespuestasP7 = document.getElementsByName("P7");
-  respuesta7OK = true;
+  respuesta7OK = false;
 
-  for (checkbox of RespuestasP7) {
-    if (checkbox.checked) {
-      if (
-        checkbox.value != "R1" &&
-        checkbox.value != "R3" &&
-        checkbox.value != "R5"
-      ) {
-        respuesta7OK = false;
-      }
-    } else {
-      if (
-        checkbox.value == "R1" ||
-        checkbox.value == "R3" ||
-        checkbox.value == "R5"
-      ) {
-        respuesta7OK = false;
-      }
+  if (RespuestasP7[0].checked && !RespuestasP7[1].checked && RespuestasP7[2].checked && !RespuestasP7[3].checked  && RespuestasP7[4].checked) {
+      respuesta7OK = true;
     }
+  else {
+      respuesta7OK = false;
   }
 
-  if (respuesta7OK) {
-    document.getElementById("imgP7").src = "../media/check.png";
+  if (respuesta7OK == true) {
+    document.getElementById("imgP7").src = "../media/BienImg.png";
   } else {
-    document.getElementById("imgP7").src = "../media/error.png";
+    document.getElementById("imgP7").src = "../media/MalImg.png";
   }
+  document.getElementById("imgP6").style.visibility = "visible";
 
   rdRespuestasP8 = document.getElementsByName("P8");
   respuesta8OK = false;
@@ -111,7 +99,7 @@ function comprobar(event) {
     }
   }
 
-  if (respuesta8OK) {
+  if (respuesta8OK == true) {
     document.getElementById("imgP8").src = "../media/BienImg.png";
   } else {
     document.getElementById("imgP8").src = "../media/MalImg.png";
@@ -137,7 +125,7 @@ function comprobar(event) {
     RespuestaFinal = false;
   }
 
-  if (respuesta10OK) {
+  if (respuesta10OK == true) {
     document.getElementById("imgP10").src = "../media/BienImg.png";
   } else {
     document.getElementById("imgP10").src = "../media/MalImg.png";
@@ -156,7 +144,7 @@ function comprobar(event) {
     }
   }
 
-  if (respuesta11OK) {
+  if (respuesta11OK == true) {
     document.getElementById("imgP11").src = "../media/BienImg.png";
   } else {
     document.getElementById("imgP11").src = "../media/MalImg.png";
@@ -182,4 +170,12 @@ function comprobar(event) {
       div.style.backgroundColor = "rgba(200, 0, 0, 0.3)";
     }
   });
+}
+
+function limpiar(event) {
+  event.preventDefault();
+  imagenesLimpiar = document.getElementsByClassName("imgPreg")
+  for(img of imagenesLimpiar){
+  img.style.visibility = "invisible";
+  }
 }
