@@ -73,11 +73,16 @@ function comprobar(event) {
   RespuestasP7 = document.getElementsByName("P7");
   respuesta7OK = false;
 
-  if (RespuestasP7[0].checked && !RespuestasP7[1].checked && RespuestasP7[2].checked && !RespuestasP7[3].checked  && RespuestasP7[4].checked) {
-      respuesta7OK = true;
-    }
-  else {
-      respuesta7OK = false;
+  if (
+    RespuestasP7[0].checked &&
+    !RespuestasP7[1].checked &&
+    RespuestasP7[2].checked &&
+    !RespuestasP7[3].checked &&
+    RespuestasP7[4].checked
+  ) {
+    respuesta7OK = true;
+  } else {
+    respuesta7OK = false;
   }
 
   if (respuesta7OK == true) {
@@ -85,7 +90,7 @@ function comprobar(event) {
   } else {
     document.getElementById("imgP7").src = "../media/MalImg.png";
   }
-  document.getElementById("imgP6").style.visibility = "visible";
+  document.getElementById("imgP7").style.visibility = "visible";
 
   rdRespuestasP8 = document.getElementsByName("P8");
   respuesta8OK = false;
@@ -165,7 +170,7 @@ function comprobar(event) {
     }
   });
 
-    document.querySelectorAll(".DivPregunta").forEach((div) => {
+  document.querySelectorAll(".DivPregunta").forEach((div) => {
     if (div.querySelector('img[src$="MalImg.png"]')) {
       div.style.backgroundColor = "rgba(200, 0, 0, 0.3)";
     }
@@ -174,8 +179,12 @@ function comprobar(event) {
 
 function limpiar(event) {
   event.preventDefault();
-  imagenesLimpiar = document.getElementsByClassName("imgPreg")
-  for(img of imagenesLimpiar){
-  img.style.visibility = "invisible";
+  imagenesLimpiar = document.getElementsByClassName("imgPreg");
+  divsLimpiar = document.getElementsByClassName("DivPregunta");
+  for (img of imagenesLimpiar) {
+    img.src = "";
+  }
+  for (div of divsLimpiar) {
+    div.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
   }
 }
