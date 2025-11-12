@@ -178,7 +178,6 @@ function comprobar(event) {
 }
 
 function limpiar(event) {
-  event.preventDefault();
   imagenesLimpiar = document.getElementsByClassName("imgPreg");
   divsLimpiar = document.getElementsByClassName("DivPregunta");
   for (img of imagenesLimpiar) {
