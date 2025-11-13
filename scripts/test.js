@@ -161,6 +161,7 @@ function comprobar(event) {
     DivPremio.innerHTML = "";
     const imgPremio = document.createElement("img");
     imgPremio.src = "../media/Premio.png";
+    imgPremio.id = "imgPremio";
     DivPremio.appendChild(imgPremio);
   }
 
@@ -186,4 +187,5 @@ function limpiar(event) {
   for (div of divsLimpiar) {
     div.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
   }
+  document.getElementById("imgPremio").remove();
 }
