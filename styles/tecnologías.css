@@ -9,7 +9,7 @@ body {
   display: grid;
   min-height: 100vh;
   place-items: center;
-  gap: 5vh;
+  gap: 5vw;
 }
 
 h1 {
@@ -27,11 +27,12 @@ h3 {
   line-height: 1.5;
 }
 
-section {
+main {
   display: flex;
   flex-direction: column;
-  gap: 5vh;
-  padding: 5vh;
+  gap: 5vw;
+  padding: 5vw;
+  width: 80vw;
 }
 
 .botonVuelta {
@@ -73,7 +74,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
   padding-top: 6vh;
   padding-bottom: 6vh;
   padding-left: 4vw;
@@ -82,7 +83,7 @@ section {
   gap: 5vh;
 }
 
-.div2 {
+.divFoto {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,30 +94,22 @@ section {
   min-height: 8vh;
 }
 
-img {
+.ImgNormal {
   height: 9vh;
   width: auto;
 }
 
-iframe {
-  width: 80vw;
-  height: 80vh;
-  border-radius: 15pt;
-  margin: 5vh;
-}
-
-footer {
-  padding-bottom: 5vh;
-}
-
 @media (max-width: 850px) {
-  div {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  main {
+    width: 95vw;
+    padding: 5vw;
+    gap: 3vh;
   }
 
-  img {
-    width: 150px;
+  .divConFoto,
+  .divSinFoto {
+    flex-direction: column;
+    text-align: center;
+    gap: 2vh;
   }
 }

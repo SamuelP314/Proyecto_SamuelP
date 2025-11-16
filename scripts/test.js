@@ -162,6 +162,7 @@ function comprobar(event) {
     const imgPremio = document.createElement("img");
     imgPremio.src = "../media/Premio.png";
     imgPremio.id = "imgPremio";
+    imgPremio.style.maxWidth = "75vw";
     DivPremio.appendChild(imgPremio);
   }
 

@@ -25,7 +25,7 @@ h3 {
   font-family: "Verdana", sans-serif;
   line-height: 1.5;
   max-width: 80vw;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15pt;
   font-size: 3vh;
   text-align: justify;
@@ -61,4 +61,10 @@ iframe {
   height: 80vh;
   border-radius: 15pt;
   margin: 5vh;
+}
+
+@media (max-width: 850px) {
+  iframe {
+    height: 40vh;
+  }
 }
